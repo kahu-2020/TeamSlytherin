@@ -1,7 +1,13 @@
 body {
   background-image: url(image/commonRoom.jpg);
   background-size: cover;
-  background-repeat: no repeat;
-  background-position: center center;
 
+
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+  font-family:'Uncial Antiqua', cursive;
+ font-size: 5pc;
 }
