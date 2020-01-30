@@ -1,8 +1,11 @@
 import React from 'react'
+import Wizard from './Wizard'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <body>
+      <h1>React development has begun!</h1>
+    </body>
   )
 }
 
