@@ -3,9 +3,12 @@ import Wizard from './Wizard'
 
 const App = () => {
   return (
-    <body>
+    <div>
       <h1>Slytherin Spell Selector</h1>
-    </body>
+      <Wizard image="/image/malfoy.jpeg" name="Draco Malfoy" spell="Everte Statum" wand="Hawthorne wood and unicorn hair core" />
+      <Wizard image="image/snape.jpeg" name="Severus Snape" spell="Sectumsempra" wand="Oak and DRagon heart string" />
+      <Wizard image="/image/volde.jpeg" name="Lord Voldemort" spell="Avada Kedavra" wand="Yew and phoenix feather core" />
+    </div>
   )
 }
 
