@@ -1,8 +1,8 @@
 body {
-  background-image: url(image/commonRoom.jpg);
-  background-size: cover;
 
-
+  background-color: rgb(26, 71, 42);
+  /* background-image: url(image/commonRoom.jpg);
+  background-size: contain; */
 
 }
 
@@ -19,7 +19,24 @@ h3 {
   
 }
 
-.photo {
-  text-align: center;
-  display: flexbox;
+.wizard-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wizard {
+  display: flex;
+  align-items: center;
+}
+
+.wizard:nth-child(2) {
+  justify-content: flex-end;
+}
+
+.text {
+  padding-left: 20px;
+}
+
+.image {
+  width: 180px;
 }
