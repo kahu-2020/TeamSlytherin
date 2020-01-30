@@ -1,6 +1,6 @@
 import React from 'react'
 
-class extends Wizard = () => {
+const Wizard = () => {
   return (
     <div>
 
