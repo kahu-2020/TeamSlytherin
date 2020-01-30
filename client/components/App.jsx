@@ -4,7 +4,7 @@ import Wizard from './Wizard'
 const App = () => {
   return (
     <body>
-      <h1>React development has begun!</h1>
+      <h1>Slytherin Spell Selector</h1>
     </body>
   )
 }
