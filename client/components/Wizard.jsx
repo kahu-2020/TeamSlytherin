@@ -6,7 +6,7 @@ class Wizard extends React.Component {
     super(props)
 
     this.state = {
-      isVisible:false
+      isVisible: false
     }
 
     this.mouseEnter = this.mouseEnter.bind(this)
@@ -14,27 +14,39 @@ class Wizard extends React.Component {
 
   }
 
-    mouseEnter(event){
-      this.setState({isVisible:true});
-    }
+  //   this.setState({isVisible:true});
+  // }
 
-      mouseLeave(event) {
-      this.setState({isVisible:false});
-      }
+  //   mouseLeave(event) {
+  //   this.setState({isVisible:false});
+  //   }
 
+  mouseEnter =()  => {
+    this.setState({ isVisible: true })
+  }
+
+  mouseLeave =() => {
+    this.setState({ isVisible: false })
+  }
 
   render() {
     console.log(this.props)
     return (
-      <div className='wizard' class='photo' onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
+      <div
+        className='wizard'
+        class='photo'
+        onMouseEnter={this.mouseEnter}
+        onMouseLeave={this.mouseLeave}
+      >
         <img src={this.props.image} />
-        {this.state.isVisible ? 
+        {this.state.isVisible ? (
           <div>
             <h3> Name: {this.props.name}</h3>
             <br />
             <h3>Spell: {this.props.spell}</h3>
             <h3>Wand: {this.props.wand}</h3>
-          </div> :null}
+          </div>
+        ) : null}
         )}
       </div>
     )
