@@ -21,11 +21,11 @@ class Wizard extends React.Component {
   //   this.setState({isVisible:false});
   //   }
 
-  mouseEnter =()  => {
+  mouseEnter = () => {
     this.setState({ isVisible: true })
   }
 
-  mouseLeave =() => {
+  mouseLeave = () => {
     this.setState({ isVisible: false })
   }
 
@@ -34,20 +34,20 @@ class Wizard extends React.Component {
     return (
       <div
         className='wizard'
-        class='photo'
+
         onMouseEnter={this.mouseEnter}
         onMouseLeave={this.mouseLeave}
       >
-        <img src={this.props.image} />
+        <img className="image" src={this.props.image} />
         {this.state.isVisible ? (
-          <div>
+          <div className="text">
             <h3> Name: {this.props.name}</h3>
             <br />
-            <h3>Spell: {this.props.spell}</h3>
-            <h3>Wand: {this.props.wand}</h3>
+            <h3> Spell: {this.props.spell}</h3>
+            <h3> Wand: {this.props.wand}</h3>
           </div>
         ) : null}
-        )}
+
       </div>
     )
   }
