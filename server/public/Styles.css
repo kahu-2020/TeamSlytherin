@@ -1,8 +1,8 @@
 body {
 
-  background-color: rgb(26, 71, 42);
-  /* background-image: url(image/commonRoom.jpg);
-  background-size: contain; */
+  /* background-color: rgba(26, 71, 42); */
+  background-image: url(image/hogwarts-castle-.jpg);
+  background-size: cover;
 
 }
 
@@ -39,4 +39,5 @@ h3 {
 
 .image {
   width: 180px;
+  
 }
