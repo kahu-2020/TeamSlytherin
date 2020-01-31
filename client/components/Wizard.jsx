@@ -10,9 +10,9 @@ class Wizard extends React.Component {
     }
 
     this.mouseEnter = this.mouseEnter.bind(this)
-  }
 
-  // mouseEnter(event){
+
+  }
 
   //   this.setState({isVisible:true});
   // }
